@@ -1,36 +1,27 @@
-
-/* ===============================
-   VARIABLES (COULEURS & BORDURES)
-================================= */
-:root{
-    --primary-color: #166534;      /* Vert foncé */
-    --secondary-color: #16a34a;    /* Vert clair */
-    --background-color: #f3f4f6;   /* Gris clair */
+:root {
+    --primary-color: #166534;
+    --secondary-color: #16a34a;
+    --background-color: #f3f4f6;
     --white-color: #ffffff;
     --text-color: #1f2937;
     --border-color: #e5e7eb;
 }
 
-/* ===============================
-   RESET
-================================= */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
 }
 
-/* ===============================
-   NAVIGATION
-================================= */
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,88 +30,79 @@ nav{
     border-bottom: 1px solid var(--border-color);
 }
 
-nav h1{
+nav h1 {
     color: var(--primary-color);
 }
 
-nav ul{
+nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var( --secondary-color);
     font-weight: 500;
 }
 
-/* ===============================
-   CONTAINER
-================================= */
-.container{
+
+.container {
     width: 85%;
     margin: 40px auto;
 }
 
-/* ===============================
-   HEADER SECTION
-================================= */
-.academics-header{
-    background-color: var(--primary-color);
+.academics-header {
+    background-image: url('house.jpg');
     color: var(--white-color);
     padding: 60px;
     border-radius: 12px;
     margin-bottom: 40px;
 }
 
-.academics-header h2{
+.academics-header h2 {
     font-size: 32px;
     margin-bottom: 15px;
 }
 
-/* ===============================
-   DESCRIPTION
-================================= */
-.mery{
+
+.mery {
     margin-bottom: 40px;
 }
 
-.wlm{
+.wlm {
     background-color: var(--white-color);
     padding: 30px;
     border-radius: 12px;
     border: 1px solid var(--border-color);
 }
 
-.wlm h2{
+.wlm h2 {
     margin-bottom: 15px;
     color: var(--primary-color);
 }
 
-/* ===============================
-   DEPARTMENTS (GRID)
-================================= */
-.departments{
+
+.departments {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     margin-bottom: 50px;
 }
 
-.department{
+.department {
     background-color: var(--white-color);
     padding: 25px;
     border-radius: 12px;
     border: 1px solid var(--border-color);
 }
 
-.department h3{
+.department h3 {
     color: var(--secondary-color);
     margin-bottom: 10px;
 }
 
-.department a{
+.department a {
     display: inline-block;
     margin-top: 15px;
     text-decoration: none;
@@ -128,17 +110,15 @@ nav ul li a{
     font-weight: bold;
 }
 
-/* ===============================
-   STATS
-================================= */
-.stats{
+
+.stats {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     margin-bottom: 60px;
 }
 
-.stat-box{
+.stat-box {
     flex: 1;
     background-color: var(--white-color);
     padding: 25px;
@@ -147,15 +127,13 @@ nav ul li a{
     text-align: center;
 }
 
-.stat-box h2{
+.stat-box h2 {
     color: var(--primary-color);
     font-size: 28px;
 }
 
-/* ===============================
-   FOOTER
-================================= */
-footer{
+
+footer {
     background-color: var(--white-color);
     padding: 60px 80px;
     border-top: 1px solid var(--border-color);
@@ -163,31 +141,31 @@ footer{
     justify-content: space-between;
 }
 
-.footer-left{
+.footer-left {
     width: 30%;
 }
 
-.footer-left h3{
+.footer-left h3 {
     color: var(--primary-color);
     margin-bottom: 15px;
 }
 
-.footer-links{
+.footer-links {
     width: 60%;
     display: flex;
     justify-content: space-between;
 }
 
-.footer-links h3{
+.footer-links h3 {
     margin-bottom: 15px;
     color: var(--text-color);
 }
 
-.footer-links ul{
+.footer-links ul {
     list-style: none;
 }
 
-.footer-links ul li{
+.footer-links ul li {
     margin-bottom: 8px;
     color: #6b7280;
 }
