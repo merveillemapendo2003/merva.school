@@ -1,10 +1,12 @@
 :root {
-    --primary-color: #166534;
-    --secondary-color: #16a34a;
-    --background-color: #f3f4f6;
-    --white-color: #ffffff;
+    --primary-color: #16cf17;
+    --secondary-color: #11ec10;
+    --background-color: #f5f7f4;
+    --white-color: #f5f7f4;
     --text-color: #1f2937;
     --border-color: #e5e7eb;
+    --p-color: #97b196;
+    --pr-color: #cbd4c4;
 }
 
 * {
@@ -24,7 +26,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
-    
+
 }
 
 nav h1 {
@@ -44,11 +46,33 @@ nav ul li a {
     font-weight: 500;
 }
 
+.sect {
+    display: flex;
+    align-items: start;
+    gap: 2px;
+}
+
+.sect input {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid var(--p-color)
+}
+
+/* .apply {
+    background: var(--background-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: var(--background-color);
+    font-weight: var(--text-color);
+
+} */
+
 .container {
     width: 100%;
     margin: 5px;
 
-     /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+
 }
 
 .academics-header {
@@ -62,7 +86,7 @@ nav ul li a {
 .academics-header .excellence {
     padding: 10px;
     margin-bottom: 1.3rem;
-    width:20rem;
+    width: 20rem;
     border-radius: 25px;
     background-color: var(--primary-color);
 }
@@ -88,6 +112,10 @@ nav ul li a {
     color: var(--text-color);
 }
 
+.wlm p {
+    color: var(--p-color);
+}
+
 
 .departments {
     display: grid;
@@ -95,8 +123,9 @@ nav ul li a {
     gap: 25px;
     margin-bottom: 20px;
 
-     /* display: flex; */
+    /* display: flex; */
 }
+
 /* .departments div{
     withd:50%;
 } */
@@ -108,6 +137,17 @@ nav ul li a {
     border: 1px solid var(--border-color);
 }
 
+.icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: var(--border-color);
+    align-items: center;
+    justify-content: center;
+}
+
 .department h3 {
     color: var(--text-color);
     margin-bottom: 15px;
@@ -117,8 +157,12 @@ nav ul li a {
     display: inline-block;
     margin-top: 15px;
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: bold;
+}
+
+.department p {
+    color: var(--p-color);
 }
 
 .stats {
@@ -128,7 +172,7 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-.stat-box {
+.box {
     flex: 1;
     background-color: var(--white-color);
     padding: 20px;
@@ -137,9 +181,13 @@ nav ul li a {
     text-align: center;
 }
 
-.stat-box h2 {
-    color: var(--primary-color);
+.box h2 {
+    color: var(--secondary-color);
     font-size: 28px;
+}
+
+.box p {
+    color: var(--p-color);
 }
 
 footer {
@@ -157,7 +205,10 @@ footer {
 .mervi {
     color: var(--text-color);
     margin-bottom: 15px;
+}
 
+.mervi p {
+    color: var(--p-color);
 }
 
 .brid {
@@ -173,6 +224,18 @@ footer {
     gap: 30px;
     color: var(--text-color);
     justify-content: center;
+}
+
+.brid ul {
+    color: var(--p-color);
+}
+
+.bir ul {
+    color: var(--p-color);
+}
+
+.bit ul {
+    color: var(--p-color);
 }
 
 .bit {
